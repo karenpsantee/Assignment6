@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Part1Item7 index of word </title>
+</head>
+<body>
+
+
+
+<h3>search for a variable in a string</h3>
+
+<p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+<input  id="searchValue" maxlength="9"> 
+<br>
+<p>position</p>
+<p id="demo">My first paragraph.</p> 
+<br>
+
+<p id="svalue">My first paragraph.</p>
+<br>
+<p>the phrase searched</p>
+<p id="sphrase"></p>
+<label><input id="demo" name="searchValue"></label>
+
+
+
+
+<script>
+var str = "The quick brown fox jumps over the lazy dog!";
+document.getElementById("sphrase").innerHTML = str;
+var sValue = window.prompt("enter the word to use in the search");
+document.getElementById("svalue").innerHTML = pos;
+var pos = str.lastIndexOf(sValue);
+    
+    
+document.getElementById("sphrase").innerHTML = str;
+    
+    window.console.log("string to search: " + str);
+    window.alert("string to search: " + str);
+
+
+document.getElementById("svalue").innerHTML = sValue;
+    window.console.log("search word entered: " + sValue + ": is at index position " + pos);
+    window.alert("search word entered: " + sValue + ": is at index position " + pos);
+
+    
+document.getElementById("demo").innerHTML = pos;
+  /*  window.console.log(sValue + " is in pos " + pos);
+    window.alert(sValue + " is in pos " + pos);*/
+    </script>
+ 
+
+</body>
+</html>

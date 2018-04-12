@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>assignment part2 item 5: get the square root of  number</title>
+</head>
+<body>
+
+<h2>Jassgn6 part2 (math) item 5: get the square root of  number</h2>
+
+<p></p>
+<button onclick="myFunction()">Dates#5: Start</button>
+<p>number input:</p>
+<p id="demo"></p>
+
+<br>
+<p>square root:</p>
+<p id="demox"></p>
+
+
+<script>
+function myFunction() {
+var number = 0; 
+var numberIn = 0;
+var numberIn = window.prompt("enter a number");
+var number = parseInt(numberIn, 10);
+
+document.getElementById("demo").innerHTML = numberIn;
+document.getElementById("demox").innerHTML = Math.sqrt(number);
+    
+window.alert("input number : " +  (numberIn));
+window.console.log("input number : " + (numberIn));
+window.alert("the square root is : " + Math.sqrt(number));
+window.console.log("the square root is : " + Math.sqrt(number)); 
+ 
+} 
+</script>
+
+</body>
+</html>

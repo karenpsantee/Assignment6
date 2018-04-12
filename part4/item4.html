@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>assgn6 part4 item 4 generate a string of random characters</title>
+</head>
+<body>
+
+<h2>JavaScript Math</h2>
+
+<p>Math.floor(Math.random() * 100)) returns a random integer between 0 and 99 (both included).</p>
+
+<p id="demo"></p>
+<p id="demox"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 100);
+ window.console.log("start\n");
+var sArray = new Array();
+var iii = 0;
+var ii = 0;
+var i = 0;
+
+
+function makeid() {
+  var text = "";
+  var textx = "";  
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  for (i = 0; i < 8; i++) {
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+      
+  }
+      
+  for (iii = 0; iii <= 8; iii++) {  
+        sArray.push(possible.charAt(Math.floor(Math.random() * possible.length)));
+        sArray.length = iii;
+  }
+       // window.console.log("sArray ==>" + sArray + "->length " + sArray.length + "<==");
+       // window.alert("sArray ==>" + sArray + "->length " + sArray.length + "<==");
+    return text; 
+}
+makeid();
+    
+    window.console.log("\nAn ARRAY of "  + sArray.length + " Random Characters\n" + sArray + "\n");
+    window.alert("\nAn ARRAY of "  + sArray.length + " Random Characters\n" + sArray + "\n");
+    
+    window.console.log("\nA STRING of " + sArray.length + " Random Characters\n" + makeid() + "\n"); 
+    
+    window.alert("\nA STRING of  " + sArray.length + " Random Characters" + "\n" + makeid() + "\n");
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>assignment part2 item 2 round a number up(Math.ceil)</title>
+</head>
+<body>
+
+<h2>Jassgn6 part2 (dates) item 2 use Math ceil to round up numbers</h2>
+
+<p></p>
+<button onclick="myFunction()">Dates#2: Start</button>
+<p>number input</p>
+<p id="demo"></p>
+
+<br>
+<p>number rounded up</p>
+<p id="demox"></p>
+
+
+<script>
+
+    
+function myFunction() {
+var number = 0;   
+var sArray = new Array();
+var iii = 0;
+var ii = 0;
+var i = 0;
+var numberIn = window.prompt("enter a floating decimal number");
+var number = numberIn;
+
+
+document.getElementById("demo").innerHTML = numberIn;
+document.getElementById("demox").innerHTML = Math.ceil(number);
+
+window.alert("Input number : " +  (numberIn));
+window.console.log("input number : " + (numberIn));
+window.alert("the rounded-up value of the is : " + Math.ceil(number));
+window.console.log("the roundedup value of the is : " + Math.ceil(number));
+}
+</script>
+
+</body>
+</html>

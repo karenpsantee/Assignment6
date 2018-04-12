@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Part1Item4 index of word </title>
+</head>
+<body>
+
+
+
+<h2>JavaScript String Methods</h2>
+
+<p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+<input  id="searchValue" maxlength="9"> 
+
+<p id="demo">My first paragraph.</p> 
+<p id="svalue">My first paragraph.</p>
+
+
+<p id="sphrase">a para.</p>
+<label><input id="demo" name="searchValue"></label>
+
+
+
+
+<script>
+var str = "The quick brown fox jumps over the lazy dog!";
+document.getElementById("sphrase").innerHTML = str;
+var sValue = window.prompt("enter the word to use in the search");
+document.getElementById("svalue").innerHTML = pos;
+var pos = str.lastIndexOf(sValue);
+document.getElementById("demo").innerHTML = pos;
+window.console.log(sValue + " is in pos " + pos);
+
+document.getElementById("svalue").innerHTML = sValue;
+    window.console.log("sValue" + sValue + "svalue" + svalue);
+    
+document.getElementById("searchValue").innerHTML = str;
+    window.console.log("sValue" + sValue + "svalue" + svalue);
+    </script>
+ 
+
+</body>
+</html>

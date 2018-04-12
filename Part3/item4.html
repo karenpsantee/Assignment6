@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title> Assignment6, Part3(Dates) item4 previous day of the week</title>
+<body>
+
+<h2>get previous days' day-of-the-week </h2>
+<p></p>
+<script>
+ 
+var dateIn = window.prompt("enter a date format mm-dd-yyyy");
+window.alert(dateIn + "<-- BEOREthis is value in myDate");
+ var myDate = new Date(dateIn);
+    window.alert(myDate + "<-- this is value in myDate");
+    var myDay = (myDate.getDay());
+    var prevDay = myDay;
+    if (prevDay === 0) {
+        prevDay = 6;
+    } else {
+        prevDay = (prevDay - 1);
+    }
+var dayArray = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+var dayName = (dayArray[myDay]);
+var dayLetter = (dayName.charAt(0));
+
+    
+window.alert("the date " + myDate + "is a  " + (dayArray[myDay]) + 
+            " the previous day is a " + (dayArray[prevDay]));
+//    window.alert(myDay + "<-- this is the index of myDay");
+
+
+var str;
+var dayLetter = dayName[0];
+document.write(dayArray[prevDay]); 
+window.alert("\nprevious day  " + (dayArray[prevDay]));
+window.console.log("\nprevious day  " + (dayArray[prevDay]));
+ function charStripper() {
+	"use strict";
+	firstChar = dayName.charAt(dayName(0));
+    window.console.log(firstChar + "<--- firstChar");
+	}
+   /*window.console.log("var last char: ") + lastChar}; */ 
+    
+ //var myDay = new Date(dateIn2);   
+// var dayArray = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+//var dayIndex = (myDay.getDay);
+ //   window.alert("DAYINDEX --> " + dayIndex);
+//var dayName = (dayArray[dayIndex]);
+//window.alert(dayName + "^-- dayName");  
+ //   window.console.log(Array + " <== Array");
+//window.alert("name name of the month is " + monthName(1));
+//myDate.setMonth(myDate.getMonth() + 1);
+
+//myDate.setDate(myDate.getDate() - 1);
+
+//document.write(myDate);
+
+// Output: Wed Jan 31 00:00:00 PST 1990  
+</script>
+
+
+</body>
+</html>

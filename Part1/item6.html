@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>assign6 Part1 item6 replaces part of a string with another string</title>
+</head>
+<body>
+
+<h2>Assingment6, part1, item6 prompt for input, replace text in string with input</h2>
+
+
+
+<button onclick="myFunctionx()">Click for Results</button>
+
+
+<p id="sdemo">The quick brown fox jumps over the lazy dog!</p>
+<p id="sdemox"></p>
+
+<script>
+
+var sPhrasex = "The quick brown fox jumps over the lazy dog!";
+window.console.log("sPhrasex=" + sPhrasex);
+  
+ var sNewValuex = window.prompt("Enter your full name");   
+    
+    
+function myFunctionx(){
+ var strx = "The quick brown fox jumps over the lazy dog!";  
+ var sPhrasex = "The quick brown fox jumps over the lazy dog!"; 
+window.console.log("sNewValuex=" + sNewValuex);
+//      var str = document.getElementById("sdemo").innerHTML; 
+//    var txts = str.replace(/MICROSOFT/ig,"W3Schools");
+   // var strx = "booboo and The quick brown fox jumps over the lazy dog!"; 
+    var strx = document.getElementById("sdemox").innerHTML; 
+    var sPhrasex = "The quick brown fox jumps over the lazy dog!"; 
+    var txtx = sPhrasex.replace(/the lazy dog/i,sNewValuex);
+    window.console.log("\nresult after replacing a part of the string txtx:\n" + txtx);
+    document.getElementById("sdemox").innerHTML = txtx;
+    window.console.log("txtx" + txtx);
+    window.alert("original phrase\n" + sPhrasex + "\nrevised phrase:\n " + txtx);
+    
+    
+}
+</script>
+
+</body>
+</html>
+

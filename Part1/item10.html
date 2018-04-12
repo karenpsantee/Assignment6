@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>assign6 part1 item10 replace first letter of string</title>
+</head>
+
+<body>
+
+<h2>JavaScript first letter to upperCase in string</h2>
+<p id="demo"></p>
+<!--<button onclick="jsUcfirst()">Try it</button>-->
+<button onclick="jsUcfirstx()">Try it</button>
+
+<script>
+
+function jsUcfirstx(string) { 
+    "use strict";
+    
+    var string = "the quick brown fox jumped over the lazy dog!";
+    
+    var uppercaseFirstLetter = string.charAt(0).toUpperCase();                           //1
+ 
+    var stringWithoutFirstLetter = string.slice(1);                                      //2
+
+    var newStringx = string.charAt(0).toUpperCase() + string.slice(1);                   //3
+   
+    window.alert("\noriginal string \n" + string + "\n\n" + "\nnew string\n" + newStringx + "\n");  //4
+    
+    window.console.log("\noriginal string \n" + string + "\n\n" + "\nnew string\n" + newStringx + "\n");  //5
+}
+</script>
+
+</body>
+</html>

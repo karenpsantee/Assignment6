@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>assign6 part4 item2 replace first letter to uppercase</title>
+</head>
+
+<body>
+
+<h2>JavaScript first letter of each word to upperCase in string</h2>
+<p id="demo"></p>
+<!--<button onclick="jsUcfirst()">Try it</button>-->
+<button onclick="jsUcfirstx()">Try it</button>
+<button onclick="myFunction()">Try Again</button>
+
+<script>
+
+function jsUcfirstx(string) { 
+    "use strict";
+    var i;
+    var k = 0;
+    var newArray;
+    var newArrayJ;
+    var stringIn = "the quick brown fox jumped over the lazy dog!";
+    var stringOut = stringIn;
+    var string = stringIn.split(" ");
+    for (i=0; i < string.length; i++) {
+         window.console.log(string.length + "in the for loop " + string[i]);
+        var uppercaseFirstLetter = string[i].charAt(0).toUpperCase();                           //1
+ window.console.log("uppercaseFirstLetter : " + uppercaseFirstLetter + i + "<-- i.");
+        var stringWithoutFirstLetter = string[i].slice(1);                                      //2
+        
+
+    var newStringx = string[i].charAt(0).toUpperCase() + string[i].slice(1); 
+        //3
+    window.console.log("string[i]" + string[i] + "newStringx " + newStringx);
+        string[i] = newStringx;
+          window.console.log("string[i]" + string[i] + "newStringx " + newStringx);
+    window.console.log("string : " + string);
+    window.console.log("newStringx: " + newStringx);
+        
+ 
+        window.console.log("newArray: " + newArray);
+   // uniqueWords.push(words[i]);
+        
+    }
+    
+   // var newArrayJ = newArrayJ.join(" ");
+     window.console.log(newArray);
+    window.alert(newArray);
+    window.alert("\nnew string\n" + newArray);  //4
+    window.alert("\noriginal string \n" + string + "\n\n" + "\nnew string\n" + newStringx + "\n");  //4
+    
+    window.console.log("\noriginal string \n" + string + "\n\n" + "\nnew string\n" + newStringx + "\n");  //5
+
+ 
+var res = string.replace(/,/gi, function (x) {
+    return x = "_";
+    
+});
+
+
+        window.console.log("string in: " + string + "\nResult: " + res);
+        window.alert("string in: " + string + "\nResult: " + res);
+}
+</script>
+
+</body>
+</html>

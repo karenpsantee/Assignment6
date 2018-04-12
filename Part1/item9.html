@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>assgn6 part1 item9 TRIM/LOWERCASE</title>
+</head>
+
+<body>
+
+<p>Click the button to alert the string with removed whitespace.</p>
+
+
+ <p id="demostring"></p> 
+
+<p id="pstr"></p>
+
+<p><strong>Note:</strong> The trim() method is not supported in Internet Explorer 8 and earlier versions.</p>
+
+<p id="demox"></p>
+<button onclick="myFunctionx()">Try itX</button>
+
+<script>
+var strx  = ""
+
+function myFunction() {
+window.alert("\nunchanged no trim\n" + str);
+var str  = "   THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG!  ";
+    window.alert("\nunchanged no trim\n" + str + "\n");
+document.getElementById("demostring").innerHTML = str;
+document.getElementById("pstr").innerHTML = str;
+
+var pos;
+pos = str.indexOf("THE");
+    window.console.log("pos" + pos);
+}
+
+var strxbig = ""
+var resxbig;
+function myFunctionx() {
+    var strxbig  = "  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG!  ";
+    var strx = "  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG!  ";
+    document.getElementById("demostring").innerHTML = strxbig;
+    var resx = strxbig.toLowerCase();
+    document.getElementById("demox").innerHTML = resx;
+    window.alert("\n1.the unmodified string\n" + strx + "\n");
+    window.console.log("\n" + "1.unmodified string\n" + "\n" +  strx + "\n");
+    
+    window.alert("\n2.UNTRIMMED string in lowercase\n" + resx + "\n");
+    window.console.log("\n" + "2.UNTRIMMED string in lowercase\n" + "\n" + resx + "\n");
+
+    var trimresx = "TRIMMED string " + resx.trim();
+    window.alert("\n3.TRIMMED lowercase\n" + resx.trim() + "\n");  
+    window.console.log("\n" + "3.TRIMMED string in lowercase\n" + trimresx + "\n");
+    
+}
+</script>
+
+</body>
+</html>

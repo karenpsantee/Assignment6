@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>assgn6 part4 item3 COUNT the vowels in a STRING</title>
+</head>
+<body>
+
+<h2>JavaScript count the vowels</h2>
+
+<p id="demo"></p>
+<p id="demox"></p>
+
+<p>Click the button to perfom a global search for the letters  A E I O U in a string, and display the matches.</p>
+
+<button onclick="myFunction()">Vowels</button>
+<button onclick="myFunctionx()">Consonants</button>
+
+
+<p id="demo"></p>
+
+<script>
+// GLOBAL VARIABLE str1, str
+var str1; 
+var str = "The quick brown fox jumps over the lazy dog!";  
+//var str = "The quick brown fox jumps over the lazy dog!"; 
+        
+    var varA = 0;
+    var varE = 0;
+    var varI = 0;
+    var varO = 0;
+    var varU = 0; 
+
+function myFunction()  {
+    "use strict";
+    var i = 0;
+        
+    var res = str.match(/[aeiou]/gi);
+ 
+    document.getElementById("demo").innerHTML = res;
+    
+    var resLength = res.length;
+    window.console.log("a list of ALL vowels found : \n" + res + "\ntotal nbr : " + res.length + "\n");
+    
+    //declare vowel counters
+
+    
+    //count the vowel 
+    for (i = 0; i <= res.length; i++) {
+      if (res[i] === "a") {
+          //  varA = varA + 1;
+          varA = 1;
+        }
+    }   
+     for (i = 0; i <= res.length; i++) {
+            if (res[i] === "e") {
+            //    varE = varE +1;
+                varE = 1;
+        }
+    } 
+    for (i = 0; i <= res.length; i++) {
+            if (res[i] === "i") {
+           //  varI++;
+                varI = 1;
+        }
+    }  
+    for (i = 0; i <= res.length; i++) {
+        if (res[i] === "o") {
+          //  varO++;
+            varO = 1;
+         }
+    }  
+     for (i = 0; i <= res.length; i++) {
+         if (res[i] === "u") {
+           // varU++;
+             varU = 1;
+        }
+    } 
+    window.
+   /* window.console.log("\n\A\t" + varA + "\nE\t" + varE + "\nI\t" + varI +  "\nO\t" + varO + "\nU\t" + varU + "\n");
+    window.alert("\n\A:  " + varA + "\nE: " + varE + "\nI:  " + varI +  "\nO:  " + varO + "\nU:  " + varU + "\n");*/
+    window.console.log("\nres \ " + res);
+    window.alert("\nres \ " + res); 
+    window.alert("\nNumber of (unique) vowels = " + (varA + varE + varI + varO + varU)); 
+    window.console.log("\nNumber of (unique) vowels = " + (varA + varE + varI + varO + varU)); 
+}
+ 
+function myFunctionx() {
+    "use strict";
+    var strx = str; 
+    var resx = strx.match(/[^aeiou!\s]/gi);
+  
+    document.getElementById("demox").innerHTML = resx; 
+    
+    window.console.log("\nresx \n" + resx);
+    window.alert("\nresx \n" + resx);
+    }
+</script>
+</body>
+</html>

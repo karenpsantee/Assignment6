@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>assignment part2 item 4 analyze a string of numbers</title>
+</head>
+<body>
+
+<h2>Jassgn6 part2 (dates) item 4 analyze a string of numbers</h2>
+
+<p></p>
+<button onclick="myFunction()">Dates#4: Start</button>
+<h5>Input numbers</h5>
+<p id="demo"></p>
+<h5>Sorted numbers</h5>
+<p>sorted</p>
+<p id="demoz"></p>
+<h5>Lowest</h5>
+<p id="demoLo">Lowest</p>
+<h5>Highest</h5>
+<p id="demoHi">Highest</p>
+
+<script>
+   
+myFunction();
+function myFunction() {
+
+   var zArray = window.prompt(("enter a string of numbers\n in this format: 9,9,9,9,9")); 
+    var res = zArray.split(",");
+    document.getElementById("demo").innerHTML = res;
+
+   // document.getElementById("demox").innerHTML = res(sort);
+    res.sort(function(a, b){return a-b});
+    document.getElementById("demoz").innerHTML = res;
+    document.getElementById("demoLo").innerHTML = res[0];
+    document.getElementById("demoHi").innerHTML = res[4];
+    window.console.log("\nsorted numbers: " + res + "\nlowest: " + res[0] + "\nhighest: " + res[4]);
+    window.alert("sorted numbers: " + res + "\nlowest: " + res[0] + "\nhighest: " + res[4]);
+}
+ 
+
+</script>
+
+</body>
+</html>

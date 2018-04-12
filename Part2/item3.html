@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>assignment part2 item 3 round a number down(Math.floor)</title>
+</head>
+<body>
+
+<h2>Jassgn6 part2 (dates) item 3 use Math floor to round down numbers</h2>
+
+<p></p>
+<button onclick="myFunction()">Dates#3: Start</button>
+<p>number input</p>
+<p id="demo"></p>
+
+<br>
+<p>number rounded down</p>
+<p id="demox"></p>
+
+
+<script>
+
+    
+function myFunction() {
+var number = 0;   
+var sArray = new Array();
+var iii = 0;
+var ii = 0;
+var i = 0;
+var numberIn = window.prompt("enter a floating decimal number");
+var number = numberIn;
+
+
+document.getElementById("demo").innerHTML = numberIn;
+document.getElementById("demox").innerHTML = Math.floor(number);
+    
+window.alert("input number : " +  (numberIn));
+window.console.log("input number : " + (numberIn));
+window.alert("the rounded-down value of the is : " + Math.floor(number));
+window.console.log("the roundeddown value of the is : " + Math.floor(number));
+}
+</script>
+
+</body>
+</html>

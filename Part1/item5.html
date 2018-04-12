@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Part1Item5 index of word </title>
+</head>
+<body>
+
+
+
+<h3>search for a variable in a string</h3>
+
+<p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+<input  id="searchValue" maxlength="9"> 
+ 
+<p>--------------------------------------------</p>
+<p>position</p>
+<p id="demo">My first paragraph.</p> 
+ <p>the svalue</p>
+<p id="svalue">My first paragraph.</p>
+ <p>the phrase searched</p>
+<p id="sphrase"></p>
+  <input id="demo" name="searchValue"> 
+ <h2>JavaScript String Methods</h2>
+ 
+<h3>"locate" for a variable in a string</h3>
+<p>--------------------------------------------</p>
+<p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+ <p id="demox">another para a</p>
+ <!-- <p id="posx">another para b</p>-->
+ <p id="svaluex">another para c</p>
+  <p id="sphrasex">another para d</p>
+ <!-- <input id="strx" name="searchValuex"> n-->
+<script>
+var str = "The quick brown fox jumps over the lazy dog!";
+document.getElementById("sphrase").innerHTML = str;
+    
+var sValue = window.prompt("enter the word to use in the search");
+    
+document.getElementById("svalue").innerHTML = pos;
+var pos = str.lastIndexOf(sValue);
+    
+document.getElementById("demo").innerHTML = pos;
+window.console.log("1.\t " + sValue + " is in pos " + pos);
+
+document.getElementById("svalue").innerHTML = sValue;
+    window.console.log("2.\t " + sValue + "sValue");
+    
+document.getElementById("sphrase").innerHTML = str;
+    window.console.log("3.\t\t sphrase" + str);
+//
+//step02
+    
+ <!-- <input id="strx" name="searchValuex"> n--> 
+var strx = "the phrase is Please locate where 'where' occurs!";
+  window.console.log("0x.\t" + "sphrasex" + strx);
+//var posx = strx.lastIndexOf("where");
+document.getElementById("sphrasex").innerHTML = strx;
+    window.console.log("3.\t\t sphrasex" + strx);
+//document.getElementById("sphrasex").innerHTML = strx;
+var sValuex = window.prompt("<b>" + "enter a word from the phrase below</b> \nPlease locate where 'where' occurs!");
+//  window.console.log("2xx.\t" + "sValuex" + sValuex); /* sValue this is a paragraph object */
+    window.console.log("2xx.\t" + "sValuex" + sValuex);
+var posx = strx.lastIndexOf(sValuex);  
+document.getElementById("svaluex").innerHTML = posx;
+
+document.getElementById("demox").innerHTML = posx;
+window.console.log("1x.\t" + sValuex + " is in pos " + posx);
+
+document.getElementById("svaluex").innerHTML = sValuex;
+    window.console.log("2x.\t" + "sValuex" + sValuex);
+    
+document.getElementById("sphrasex").innerHTML = strx;
+    window.console.log("3x.\t" + "sphrasex" + strx); 
+</script>
+ 
+ 
+
+</body>
+</html>

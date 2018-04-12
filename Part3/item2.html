@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title> assignment6, Part3, item 2 MonthName.</title>
+<body>
+
+<h2>Assignment6, Part3, item2. Get the name of the month </h2>
+
+<script>
+
+//var mnthIndex = window.prompt("current month is " + mnthIndex);
+//var d = new Date();
+//var mnthIndex = (d.getMonth() + 1 + "current month is ");
+
+//window.alert("current month is " + mnthIndex);
+    
+    
+//var monthNbr = (d + 1);
+//window.alert((d.getMonth() + 1) + "current month is ");
+
+var dt = new Date();
+
+// Display the month, day, and year. getMonth() returns a 0-based number.  
+var month = (dt.getMonth() + 1);
+var day = dt.getDate();
+var year = dt.getFullYear();
+document.write(month + '-' + day + '-' + year);
+
+// Output: current month, day, year  
+
+var dt = new Date('8-24-2018');
+document.write(dt);
+
+// Output: Mon Aug 24 00:00:00 PDT 2009  
+var dtA = new Date('8-24-2009 14:52:10');
+
+// The parameters are year, month, day, hours, minutes, seconds.  
+var dtB = new Date(2018, 7, 24, 14, 52, 10);
+document.write(dtA);
+document.write("<br/>");
+document.write(dtB);
+
+// Output:  
+// Mon Aug 24 14:52:10 PDT 2009  
+// Mon Aug 24 14:52:10 PDT 2009  
+
+var dateIn = window.prompt("enter a date format mm-dd-yyyy");
+        window.alert(dateIn + "<-- BEOREthis is vale in myDate");
+ var myDate = new Date(dateIn);
+    window.alert(myDate + "<-- this is value in myDate");
+    var myMonth = (myDate.getMonth());
+    window.alert(myMonth + "<-- this is the index of myMonth");
+monthArray = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+    
+    
+window.alert("display ARRay monthName\n\n" + (monthArray[myMonth]));
+window.alert("==>\n" + (monthArray[myMonth]) + "\n\n<==monthName(myMonth)" + "myMonth = \n\n -->" + (myMonth + 1));
+ //   window.console.log(Array + " <== Array");
+//window.alert("name name of the month is " + monthName(1));
+//myDate.setMonth(myDate.getMonth() + 1);
+
+//myDate.setDate(myDate.getDate() - 1);
+
+document.write(myDate);
+
+// Output: Wed Jan 31 00:00:00 PST 1990  
+</script>
+
+
+</body>
+</html>
